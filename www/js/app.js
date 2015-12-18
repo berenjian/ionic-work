@@ -38,11 +38,31 @@ angular.module('starter', ['ionic'])
     views: {
       'tab-chats': {
         templateUrl: 'templates/tab-chats.html',
-        controller: 'ChatsCtrl'
+        controller: 'DashCtrl'
       }
     }
 
   })
+
+  .state('tab.account', {
+    url: '/account',
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/tab-account.html',
+        controller: 'AccountCtrl'
+      }
+    }
+  })
+
+  .state('tab.test', {
+    url: '/test',
+    views: {
+      'tab-test': {
+        templateUrl: 'templates/tab-test.html',
+        controller: 'TestCtrl'
+      }
+    }
+  });
 
   $urlRouterProvider.otherwise('/tab/dash');
 

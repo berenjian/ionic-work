@@ -37,7 +37,7 @@ angular.module('starter', ['ionic'])
   url: '/dash',
     views: {
       'tab-chats': {
-        templateUrl: 'templates/tab-chats.html',
+        templateUrl: 'templates/tab-dash.html',
         controller: 'DashCtrl'
       }
     }

@@ -50,5 +50,5 @@ angular.module('starter.controllers', [])
   ];
 
 })
-.controller('UsersListCtrl', function($scope, $stateParams) {
-});
+
+;

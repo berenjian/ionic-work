@@ -42,6 +42,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.user',{
+    url: '/user',
+    views:{
+      'menuContent':{
+        templateUrl: 'templates/user.html',
+        controller: 'UsersListCtrl'
+      }
+    }
+  })
+
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/users');

@@ -41,13 +41,10 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('UsersListCtrl',function($scope){
-  $scope.users = [
-    { title: 'Amirmahdi', id: 1 },
-    { title: 'Ali', id: 2 },
-    { title: 'Hossein', id: 3 },
-    { title: 'Mohammad', id: 4 },
-  ];
+.controller('UsersListCtrl',function($scope, users){
+  $scope.userList = users.all();
+})
+.controller('UserCtrl', function($stateParams){
 
 })
 
